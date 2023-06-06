@@ -68,16 +68,16 @@ async def inline_query_handler(_, query):
                 ]
             )
             searched_text = f"""
-‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ SUGAR ⦔ 𖧊━‌‌‏⌯⊷≫
-⎊ **العنوان :** [{title}]({link})
+‌‌‏ ⦓ SOURCE WICHER ⦔ 
+ **العنوان :** [{title}]({link})
 
-⎊ **المدة :** `{duration}`دقيقه
-⎊ **المشاهدات :** `{views}`
-⎊ **نشـرت في:** {published}
-⎊ **القناة :** [{channel}]({channellink})
+ **المدة :** `{duration}`دقيقه
+ **المشاهدات :** `{views}`
+ **نشـرت في:** {published}
+ **القناة :** [{channel}]({channellink})
 
-<u>⎊ **بوآسـطه  {BOT_NAME}**</u>
-‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ SUGAR ⦔ 𖧊━‌‌‏⌯⊷≫"""
+<u> **بوآسـطه  {BOT_NAME}**</u>
+‌‌‏ ⦓ SOURCE WICHER ⦔ """
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,

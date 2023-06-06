@@ -79,7 +79,7 @@ async def on_stream_end(pytgcalls, update: Update):
     else:
         process = await app.send_message(
             chat_id=chat_id,
-            text="⎊ تنزيل المسار التالي من قائمة الانتظار...",
+            text=" تنزيل المسار التالي من قائمة الانتظار...",
         )
         title = get[0]["title"]
         duration = get[0]["duration"]
@@ -105,6 +105,6 @@ async def on_stream_end(pytgcalls, update: Update):
         await app.send_photo(
             chat_id=chat_id,
             photo=img,
-            caption=f"‌‌‏‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ MUSIC SUGAR ⦔ 𖧊━‌‌‏⌯⊷≫\n**⎊ بـدأ التشغيل ✅**\n\n⎊ **العنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n⎊ **المدة :** `{duration}` دقيقه\n⎊ **بواسطه :** {req_by}\n‌‌‏‌‌‏≪⊶⌯━‌‌‏𖧊 ⦓ MUSIC SUGAR ⦔ 𖧊━‌‌‏⌯⊷≫",
+            caption=f"‌‌‏‌‌‏ ⦓ SOURCE WICHER ⦔ \n** بـدأ التشغيل ✅**\n\n **العنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n **المدة :** `{duration}` دقيقه\n **بواسطه :** {req_by}\n‌‌‏‌‌‏ ⦓ SOURCE WICHER ⦔ ",
             reply_markup=buttons,
         )
