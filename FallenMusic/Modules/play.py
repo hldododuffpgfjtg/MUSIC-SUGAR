@@ -118,7 +118,7 @@ async def play(_, message: Message):
         )
         try:
             await app2.join_chat(invitelink)
-            await asyncio.sleep(1)
+            await asyncio.sleep(2)
             await fallen.edit_text(
                 f"{ASS_NAME}  تم الانضمام ✅,\n\n بدء التشغيل..."
             )
