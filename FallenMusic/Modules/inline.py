@@ -39,7 +39,7 @@ async def inline_query_handler(_, query):
             await app.answer_inline_query(
                 query.id,
                 results=answers,
-                switch_pm_text="اكتب آي حاجة هبحث عنها في اليوتيوب ⚡",
+                switch_pm_text="أبحـث على اي شيء يعجبك",
                 cache_time=10,
             )
         except:
